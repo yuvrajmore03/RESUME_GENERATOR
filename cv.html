@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+<div class="container" id="cvform">
+
+<div id="heading">
+        <h1>
+            RESUME GENERATOR
+            <h4>By More Yuvraj</h4>
+        </h1>
+</div>
+<div class="main">
+   
+   
+   
+    <div id="col1">
+        <h3>
+            Personal Information
+        </h3>
+        <br><br>
+        <div id="nameFild">
+            Your Name<br>
+            <textarea name="name" id="namef" placeholder="Inter here" rows="1" cols="80%"></textarea>
+        </div>
+        <br><br>
+
+        <div id="contact">
+            Your Contact<br>
+            <textarea name="contact" id="contactf" placeholder="Inter here" rows="1" cols="80%"></textarea>
+        </div>
+        <br><br>
+
+        <div id="address">
+            Your Address<br>
+            <textarea name="address" id="addressf" placeholder="Inter here" rows="5" cols="80%"></textarea>
+        </div>
+        <br><br>
+
+        <h3>
+            Import Link
+        </h3>
+
+       <div id="FB">
+            Fecebook<br>
+            <textarea name="FB" id="FBf" placeholder="Inter here" rows="1" cols="80%"></textarea>
+        </div>
+        <br><br>
+
+        <div id="insta">
+            Instagram<br>
+            <textarea name="insta" id="instaf" placeholder="Inter here" rows="1" cols="80%"></textarea>
+        </div>
+        <br><br>
+
+        <div id="linkedin">
+            Linkedin<br>
+            <textarea name="linkedin" id="linkedinf" placeholder="Inter here" rows="1" cols="80%"></textarea>
+        </div>
+        <br><br>
+
+       
+    </div>
+       
+   
+   
+   
+    <div id="col2">
+        <h3>
+            Professional Information
+        </h3>
+        <br><br>
+
+        <div id="objective">
+            Objective<br>
+            <textarea name="objective" id="objf" placeholder="Inter here" rows="5" cols="80%"></textarea>
+
+        </div>
+        <br><br>
+
+        <div id="we">
+            Work Experiance<br>
+            <textarea name="we" id="wef" placeholder="Inter here" rows="5" cols="80%"></textarea>
+        
+         </div>
+         <br><br>
+
+        <div id="AQ">
+            Acadmic Qualification<br>
+            <textarea name="AQ" id="aqf" placeholder="Inter here" rows="9" cols="80%"></textarea>
+            
+        
+        </div>
+        <br><br>
+    
+    </div>
+
+
+</div>
+<br>
+<div id="but">
+    <button onclick="generateCV()">Generat CV</button>
+</div>
+
+</div>
+
+
+
+
+
+<br><br>
+<div class="container" id="templet">
+<div class="main2">
+
+    <div id="col3">
+
+        <div id="info">
+            <img src="https://oceanbluesoftware.com/wp-content/uploads/2016/12/profile-photo.png" alt="" id="img"><br>
+             <p id="namet">More Yuvraj Navnath</p><br>
+             <p id="contactt">+919527992434, +919370296066</p><br>
+             <p id="addresst">Mungi, Tel-Shevgaon, Dist-Ahamadnagar</p><br>
+        </div>
+        <hr><br>
+        <div id="linkt">
+            <p id="FBt"><a href="#1">https://www.fecebook.com</a></p><br>
+            <p id="instat"><a href="#2">https://www.instagram.com</a></p><br>
+            <p id="linkedint"><a href="#3">https://www.Linkedin.com</a></p><br>
+           
+        </div>
+    </div>
+
+    <div id="col4">
+        <h1 id="headingt">More Yuvraj Navnath</h1><br><br>
+        <div id="objt">
+            <header id="o"><h3>Objective</h3></header><br>
+            <p id="objtt">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto maxime odio laudantium delectus a vero quaerat. Ratione repellendus temporibus ut atque nam! Eveniet, non. Eaque eos illo libero alias eveniet.
+            </p><br><br>
+        </div>
+
+        <div id="aqt">
+            <header id="a"><h3>Acadmic Qualification</h3></header><br>
+            <p id="aqtt">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto maxime odio laudantium delectus a vero quaerat. Ratione repellendus temporibus ut atque nam! Eveniet, non. Eaque eos illo libero alias eveniet.
+            </p><br><br>
+        </div>
+
+        <div id="wet">
+            <header id="w"><h3>Work Experiance</h3></header><br>
+            <p id="wett">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto maxime odio laudantium delectus a vero quaerat. Ratione repellendus temporibus ut atque nam! Eveniet, non. Eaque eos illo libero alias eveniet.
+            </p><br><br>
+        </div>
+
+        
+        
+    </div>
+    
+
+</div><br><br>
+<div id="but2">
+    <button onclick="printCV()">Print CV</button>
+</div>
+</div>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="cv.js"></script>
+</body>
+</html>

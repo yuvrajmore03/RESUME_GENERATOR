@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#templet{
+    display: none;
+}
+
+
+/* #cvform{
+    display: none;
+} */
+.main{
+   max-width: 1500px;
+   padding: 5px;
+   display: flex;
+   flex-direction: row;
+
+}
+
+#col1{
+    max-width: 750px;
+    padding: 20px;
+}
+
+#col2{
+    max-width: 750px;
+    padding: 20px;
+}
+
+#heading{
+    text-align: center;
+}
+
+#but,#but2{
+    text-align: center;
+    color: black;
+}
+
+/* templet */
+.main2{
+    max-width: 1500px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+#col3{
+    background-color: rgb(115, 115, 169);
+    max-width: 500px;
+    min-width: 500px;
+    padding: 20px;  
+
+}
+
+#col4{
+    max-width: 1000px;
+    padding: 20px;  
+
+}
+#info{
+    text-align: center;
+}
+
+#img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#linkt{
+    text-align: center;
+}
+
+#headingt{
+    text-align: center;
+}
+
+#a,#o,#w{
+    background-color: rgb(165, 110, 216);
+}
+
+#templet{
+    margin-left: 100px;
+    margin-right: 100px;
+}
